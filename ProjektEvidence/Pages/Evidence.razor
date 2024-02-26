@@ -1,6 +1,24 @@
 ﻿@page "/evidence"
 
-<h1>Evidence</h1>
+<h1>Evidence!</h1>
+
+<div class="p-2 border">
+    <label>Datum: <input type="date" /></label>
+    <label>Náklady: <input type="number" /></label>
+    <label>Výnosy: <input type="number" /></label>
+    <button>Přidat</button>
+</div>
+<!--margin je vnejsi ohraniceni, my znamena margin z osy y-->
+<div class="my-2 p-2 border">
+    <button class="btn btn-success">Zobraz vše</button>
+    <button class="btn btn-warning">Počet záznamů</button>
+    <button class="btn btn-danger">Statistiky</button>
+</div>
+<div class="my-2 p-2 border">
+    <p>Minimum:</p>
+    <p>Maximum:</p>
+    <p>Průměr:</p>
+</div>
 
 @code {
 
