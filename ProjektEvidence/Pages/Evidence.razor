@@ -10,14 +10,12 @@
 </div>
 <!--margin je vnejsi ohraniceni, my znamena margin z osy y-->
 <div class="my-2 p-2 border">
-    <button class="btn btn-success">Zobraz vše</button>
-    <button class="btn btn-warning">Počet záznamů</button>
+    <button class="btn btn-success" @onclick="Evid.ZobrazAll">Zobraz vše</button>
+    <button class="btn btn-warning" @onclick="Evid.ZobrazPocetZaznamu">Počet záznamů</button>
     <button class="btn btn-danger">Statistiky</button>
 </div>
 <div class="my-2 p-2 border">
-    <p>Minimum:</p>
-    <p>Maximum:</p>
-    <p>Průměr:</p>
+    <p>@((MarkupString)Evid.Vypis)</p>
 </div>
 
 @code {

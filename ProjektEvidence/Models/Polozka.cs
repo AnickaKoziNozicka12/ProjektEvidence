@@ -59,5 +59,10 @@
         }
         public double Zisk => Vynosy - Naklady;
 
+        public override string ToString()
+        {
+            return $"Datum: {Datum} - Náklady: {Naklady} - Výnosy {Vynosy} - Zisk: {Zisk}";
+        }
+
     }
 }
